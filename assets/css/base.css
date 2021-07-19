@@ -50,28 +50,6 @@
         animation: flipInX 1.5s ease-in-out;
     }
     
-    @keyframes flipInX {
-        from {
-            transform: rotate3d(1, 0, 0, 90deg) translateX(-50%);
-            animation-timing-function: ease-in;
-            opacity: 0;
-        }
-        40% {
-            transform: rotate3d(1, 0, 0, -20deg) translateX(-50%);
-            animation-timing-function: ease-in;
-        }
-        60% {
-            transform: rotate3d(1, 0, 0, 10deg) translateX(-50%);
-            opacity: 1;
-        }
-        80% {
-            transform: rotate3d(1, 0, 0, -5deg) translateX(-50%);
-        }
-        to {
-            transform: translateX(-50%);
-        }
-    }
-    
     .header__container__slider--pre-next span {
         color: var(--white-color);
         font-weight: 900;
