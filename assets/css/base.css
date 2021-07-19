@@ -46,10 +46,6 @@
         position: relative;
     }
     
-    .header__container__slider {
-        animation: flipInX 1.5s ease-in-out;
-    }
-    
     .header__container__slider--pre-next span {
         color: var(--white-color);
         font-weight: 900;
