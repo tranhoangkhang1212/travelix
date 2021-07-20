@@ -61,17 +61,3 @@ close.onclick = function() {
     box.style.display = 'none'
     boxBody.classList.remove('open')
 }
-
-
-let preButton = $('#pre')
-let nextButton = $('#next')
-let header = $('.header')
-console.log(header)
-
-preButton.onclick = function() {
-    $('.header.header__pre').classList.remove('header__pre')
-}
-
-nextButton.onclick = function() {
-    $('.header.header__pre').classList.remove('header__pre')
-}
