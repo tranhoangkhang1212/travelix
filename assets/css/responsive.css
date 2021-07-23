@@ -202,6 +202,9 @@
     .container__about--text {
         margin-top: 55px;
     }
+    .footer__container .m-6:nth-child(even) {
+        padding-left: 15px;
+    }
 }
 
 @media (min-width: 480px) and (max-width: 655px) {
