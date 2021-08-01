@@ -76,6 +76,11 @@
         font-size: 22px;
         color: var(--white-color);
         z-index: 2;
+        cursor: pointer;
+        transition: all .3 ease;
+    }
+    .list-tablet-mobile:hover {
+        color: var(--yellow);
     }
     .footer__container .m-6:nth-child(even) {
         padding-left: 55px;
@@ -106,8 +111,6 @@
         color: var(--white-color);
     }
     .list-tablet-mobile {
-        display: block;
-        position: absolute;
         right: 20px;
         top: 15px;
         font-size: 22px;
@@ -351,6 +354,9 @@
         transform: translateY(50%);
         box-shadow: 0 8px 20px rgb(0 0 0 / 15%);
         border-radius: 7px;
+    }
+    .header__menu__body--content {
+        transition: all .2s ease-in-out;
     }
     .footer__container .m-6:nth-child(even) {
         padding-left: 15px;
