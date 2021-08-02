@@ -1,10 +1,10 @@
 /* Pc Low */
 
 @media (max-width: 1200px) {
-    .header__container__slider--content h1:first-child {
+    .home__container__slider--content h1:first-child {
         font-size: 92px;
     }
-    .header__container__slider--content h1:last-child {
+    .home__container__slider--content h1:last-child {
         font-size: 80px;
     }
 }
@@ -19,10 +19,10 @@
     .tour__container__item {
         margin-bottom: 50px;
     }
-    .header__container__slider--content h1:first-child {
+    .home__container__slider--content h1:first-child {
         font-size: 72px;
     }
-    .header__container__slider--content h1:last-child {
+    .home__container__slider--content h1:last-child {
         font-size: 60px;
     }
     .header__nav__container--list {
@@ -50,10 +50,6 @@
     .search__container__tab:last-child {
         border-radius: 0;
         padding-left: 7px;
-    }
-    .search__container__tab:hover {
-        background-color: var(--white-color);
-        color: var(--black);
     }
     .search__container__tab.active {
         background-color: var(--yellow);
@@ -125,9 +121,6 @@
     }
     .search__container--item {
         padding: 0 5px;
-    }
-    .search__container--btn {
-        left: 10px;
     }
     .search__container--btn {
         bottom: 50px;
@@ -218,6 +211,13 @@
 }
 
 @media (max-width: 479px) {
+    .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .header__nav__container--logo {
+        font-size: 22px;
+    }
     .header__topbar {
         display: none;
     }
@@ -225,10 +225,10 @@
         text-transform: uppercase;
         padding: 15px 0;
     }
-    .header__container__slider--content h1:first-child {
+    .home__container__slider--content h1:first-child {
         font-size: 48px;
     }
-    .header__container__slider--content h1:last-child {
+    .home__container__slider--content h1:last-child {
         font-size: 42px;
     }
     .header__nav {
@@ -258,6 +258,12 @@
     }
     .header .scroll .header__nav__container {
         padding: 5px 0;
+    }
+    .search__container--btn {
+        height: 35px;
+    }
+    .search__container--btn a {
+        font-size: 12px;
     }
     .search__container__tabs {
         padding-right: 5px;
@@ -314,13 +320,13 @@
         margin: auto;
         padding: 65px 20px;
     }
-    .header__container__slider--btn,
+    .home__container__slider--btn,
     .item--btn {
         height: 44px;
         border-radius: 22px;
         margin-top: 40px;
     }
-    .header__container__slider--btn a,
+    .home__container__slider--btn a,
     .item--btn a {
         line-height: 44px;
         padding-left: 36px;

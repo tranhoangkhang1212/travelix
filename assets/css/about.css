@@ -1,0 +1,92 @@
+.home__title {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home__title h1 {
+    font-size: 72px;
+    color: var(--white-color);
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+.home {
+    height: 100%;
+}
+
+.home__background {
+    background: linear-gradient(rgba(64, 6, 97, 0.3), rgba(64, 6, 97, 0.4)), url(../images/Turkey-Turkish-Cappadocia-hot-air-balloons-1149868-wallhere.com.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro {
+    background-color: #f6f9fb;
+    padding: 90px 50px 90px 15px;
+}
+
+.intro__image img {
+    max-width: 100%;
+}
+
+.intro__content {
+    position: relative;
+}
+
+.intro__content--title h1 {
+    color: var(--black);
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.intro__content--text {
+    font-weight: 600;
+    color: #929191;
+    margin-top: 60px;
+    line-height: 2;
+    text-align: justify;
+    padding-bottom: 35px;
+}
+
+.tour__item--btn {
+    position: relative;
+    left: 100px;
+    bottom: 0;
+    display: inline-block;
+    height: 53px;
+    border-radius: 27px;
+    overflow: hidden;
+}
+
+@media (max-width: 740px) {
+    .home__title h1 {
+        font-size: 48px;
+        white-space: nowrap;
+    }
+    .intro {
+        background-color: #f6f9fb;
+        padding: 90px 15px 90px 15px;
+    }
+    .intro__content--title h1 {
+        font-size: 25px;
+    }
+    .intro .tour__item--btn {
+        height: 45px
+    }
+    .intro .tour__item--btn a {
+        line-height: 45px
+    }
+}
+
+@media (max-width: 479px) {
+    .home__title {
+        top: 60%;
+    }
+    .header__about-us h1 {
+        font-size: 32px;
+    }
+}
