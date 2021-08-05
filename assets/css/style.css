@@ -109,7 +109,6 @@
     width: 100%;
     background: var(--bg-section);
     position: relative;
-    padding: 60px 0;
 }
 
 .search__container__tabs {
@@ -167,10 +166,14 @@
     align-items: center;
 }
 
+.search__container {
+    height: 192px;
+}
+
 .search__container .row {
     justify-content: center;
     align-items: center;
-    height: 192px;
+    height: 100%;
 }
 
 .search__container--item {
@@ -196,7 +199,9 @@
 
 .search__container--item select {
     appearance: none;
-    background-image: url(https://preview.colorlib.com/theme/travelix/images/dropdown.png);
+    background-color: #fff;
+    background-image: url(../images/chevron-down-solid.svg);
+    background-size: 50px;
     background-position: center right;
     background-repeat: no-repeat;
     border: solid 1px #fff;
@@ -223,7 +228,7 @@
     align-items: center;
     border-radius: 53px;
     line-height: 53px;
-    margin-top: 5%;
+    margin-top: 30px;
     transition: all .3s ease-in-out;
 }
 
@@ -508,6 +513,7 @@
 
 .offer__container__item {
     margin-top: 70px;
+    position: relative;
 }
 
 .offer__item__img--container {
@@ -818,10 +824,7 @@
 
 .contact__container__form {
     position: relative;
-    padding-top: 74px;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-bottom: 88px;
+    padding: 74px 48px 88px 48px;
     background: var(--border);
     border-radius: 7px;
 }
@@ -887,8 +890,7 @@
     color: #fff;
     text-transform: uppercase;
     line-height: 53px;
-    padding-left: 29px;
-    padding-right: 29px;
+    padding: 0 29px;
     background: #31124b;
     transform: translateY(15px);
     border: none;

@@ -64,17 +64,11 @@
                         </div>
                         <div class="l-6 hide-on-tablet_mobile">
                             <ul class="header__nav__container--list">
-                                <li class="active"><a href="index.html">Home</a></li>
-                                <li>
-                                    <a href="#">About</a>
-                                </li>
-                                <li>
-                                    <a href="#">Offers</a>
-                                </li>
-                                <li>
-                                    <a href="#">News</a>
-                                </li>
-                                <li><a href="#">Contact</a></li>
+                                <li class="active"><a href="home.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="offers.html">Offers</a></li>
+                                <li><a href="news.html">News</a></li>
+                                <li><a href="contact.html">Contact</a></li>
                             </ul>
                         </div>
                         <div class="l-3 m-6 c-4">
@@ -88,14 +82,31 @@
                 </div>
             </div>
         </nav>
+
+        <div class="header__menu">
+            <div class="header__menu__overlay"></div>
+            <div class="header__menu__body--content">
+                <ul>
+                    <li class="active"><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="offers.html">Offers</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+                <i class="fas fa-times" id="menu_close"></i>
+            </div>
+        </div>
+    </header>
+    <div class="home">
+        <div class="home__background"></div>
         <div class="grid wide">
             <div class="row">
-                <div class="header__container__slider">
-                    <div class="header__container__slider--content">
+                <div class="home__container__slider">
+                    <div class="home__container__slider--content">
                         <h1>Discover</h1>
                         <h1>the world</h1>
                     </div>
-                    <div class="header__container__slider--btn">
+                    <div class="home__container__slider--btn">
                         <div class="btn__bgc"></div>
                         <a href="#">explore now 
                             <span></span>
@@ -106,23 +117,8 @@
                 </div>
             </div>
         </div>
-        <div class="header__menu">
-            <div class="header__menu__overlay"></div>
-            <div class="header__menu__body--content">
-                <ul>
-                    <li class="active"><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="#">About</a>
-                    </li>
-                    <li><a href="#">Offers</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <i class="fas fa-times" id="menu_close"></i>
-            </div>
-        </div>
-    </header>
-    <section class="search">
+    </div>
+    <div class="search">
         <div class="grid wide">
             <div class="search__container__tabs grid wide">
                 <div class="row">
@@ -160,13 +156,13 @@
                         </div>
                         <input type="text">
                     </div>
-                    <div class="search__container--item l-2  m-6 c-12">
+                    <div class="search__container--item l-2 m-6 c-12">
                         <div>
                             <span>Check in</span>
                         </div>
                         <input type="text" placeholder="DD-MM-YYYY">
                     </div>
-                    <div class="search__container--item l-2  m-6 c-12">
+                    <div class="search__container--item l-2 m-6 c-12">
                         <div>
                             <span>Check out</span>
                         </div>
@@ -192,7 +188,7 @@
                             <option>02</option>
                         </select>
                     </div>
-                    <div class="search__container--btn l-2 m-4 m-o-7 c-4 c-o-7">
+                    <div class="search__container--btn l-2 m-4 c-4">
                         <a href="#">Search</a>
                         <span></span>
                         <span></span>
@@ -201,9 +197,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="tour">
+    <div class="tour">
         <div class="grid wide">
             <div class="tour__container">
                 <div class="tour__container__content">
@@ -300,9 +296,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="package">
+    <div class="package">
         <div class="package__background" style="background-image:url(../assets/images/xcta.jpg.pagespeed.ic.m69gPEowgD.webp)"></div>
         <div class="package__container">
             <div class="grid wide">
@@ -332,9 +328,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="offers">
+    <div class="offers">
         <div class="offers__container">
             <div class="grid wide">
                 <h2>the best offers with rooms</h2>
@@ -490,9 +486,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="testimonials">
+    <div class="testimonials">
         <div class="test_border"></div>
         <div class="grid wide">
             <div class="testimonials__body">
@@ -557,9 +553,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="trending">
+    <div class="trending">
         <div class="grid wide">
             <div class="trending__container">
                 <h2>Trending Now</h2>
@@ -665,9 +661,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="contact">
+    <div class="contact">
         <div class="contact__background"></div>
         <div class="grid wide">
             <div class="contact__container">
@@ -690,7 +686,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <footer class="footer">
         <div class="footer__container">
@@ -804,7 +800,6 @@
             </div>
         </div>
     </footer>
-
     <script src="../assets/js/main.js" type="text/javascript"></script>
 </body>
 
