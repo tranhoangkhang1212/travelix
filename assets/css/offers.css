@@ -259,6 +259,11 @@
     .home__title h1 {
         font-size: 30px;
     }
+    .search__container__extras input[type="checkbox"] {
+        width: auto;
+        height: auto;
+        appearance: auto;
+    }
     .offers__container__filter--list {
         animation: none;
     }
