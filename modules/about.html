@@ -487,6 +487,33 @@
         </div>
     </footer>
     <script src="../assets/js/main.js " type="text/javascript "></script>
+    <script>
+        function start(stats, color) {
+            var statsLeft = stats.querySelector('.stats__bar__perc--left')
+            var statsRight = stats.querySelector('.stats__bar__perc--right')
+            var valueElement = stats.querySelector('.stats__bar__value')
+            var dataX = parseInt(stats.getAttribute("data-x"))
+            var dataY = parseInt(stats.getAttribute("data-y"))
+
+            var value = (dataY - dataX) / dataX * 100
+            var percX = dataX / (dataX + dataY) * 100
+            var percY = dataY / (dataX + dataY) * 100
+
+            statsLeft.style.width = percX + "%"
+            statsRight.style.width = percY + "%"
+            statsRight.style.background = color
+            if (value > 0) {
+                valueElement.innerText = "+" + Math.round(value) + "%"
+            } else {
+                valueElement.innerText = Math.round(value) + "%"
+            }
+        }
+
+        start($('.stats__bar'), '#31124b');
+        start($('.stats__bar.data2'), '#a95ce4');
+        start($('.stats__bar.data3'), 'red');
+        start($('.stats__bar.data4'), '#fa9e1b');
+    </script>
 </body>
 
 </html>

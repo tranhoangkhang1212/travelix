@@ -1,5 +1,28 @@
-var $ = document.querySelector.bind(document)
-var $$ = document.querySelectorAll.bind(document)
+// Active link header
+var listLink = location.href;
+var listItem = document.querySelectorAll(".header__nav__container--list a");
+var listLength = listItem.length;
+
+let i = 0;
+for (i; i < listLength; i++) {
+    if (listItem[i].href === listLink) {
+        listItem[i].className = "active";
+    }
+}
+
+var links = location.href;
+var items = document.querySelectorAll(".header__menu__body--content a");
+var listslength = items.length;
+
+let j = 0;
+for (j; j < listLength; j++) {
+    if (items[j].href === links) {
+        items[j].className = "active";
+    }
+}
+
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
 
 // Header sticky
 var headerSticky = $('.header__nav')
@@ -61,31 +84,3 @@ close.onclick = function() {
     box.style.display = 'none'
     boxBody.classList.remove('open')
 };
-
-// Stats
-
-function start(stats, color) {
-    var statsLeft = stats.querySelector('.stats__bar__perc--left')
-    var statsRight = stats.querySelector('.stats__bar__perc--right')
-    var valueElement = stats.querySelector('.stats__bar__value')
-    var dataX = parseInt(stats.getAttribute("data-x"))
-    var dataY = parseInt(stats.getAttribute("data-y"))
-
-    var value = (dataY - dataX) / dataX * 100
-    var percX = dataX / (dataX + dataY) * 100
-    var percY = dataY / (dataX + dataY) * 100
-
-    statsLeft.style.width = percX + "%"
-    statsRight.style.width = percY + "%"
-    statsRight.style.background = color
-    if (value > 0) {
-        valueElement.innerText = "+" + Math.round(value) + "%"
-    } else {
-        valueElement.innerText = Math.round(value) + "%"
-    }
-}
-
-start($('.stats__bar'), '#31124b');
-start($('.stats__bar.data2'), '#a95ce4');
-start($('.stats__bar.data3'), 'red');
-start($('.stats__bar.data4'), '#fa9e1b');
