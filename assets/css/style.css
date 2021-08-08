@@ -114,6 +114,7 @@
 .search__container__tabs {
     position: absolute;
     bottom: 100%;
+    cursor: pointer;
 }
 
 .search__container__tabs .row {
