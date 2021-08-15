@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <div class="button">
+        <div class="button__overlay">
+            <span>off</span>
+            <span>on</span>
+            <div class="container">
+
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn = document.querySelector('.button__overlay');
+        let span = document.querySelector('.container span');
+        btn.onclick = () => {
+            btn.classList.toggle('on')
+        };
+    </script>
+    <script>
+        // let array = [{
+        //         id: 1,
+        //         name: "Tran Khang",
+        //         birthDay: "12/12/2000",
+        //         coin: 0
+        //     },
+
+        //     {
+        //         id: 2,
+        //         name: "Tran A",
+        //         birthDay: "1/12/2021",
+        //         coin: 0
+        //     },
+
+        //     {
+        //         id: 3,
+        //         name: "Tran Van B",
+        //         birthDay: "1/01/2021",
+        //         coin: 0
+        //     }
+        // ]
+        // let isFree = array.every((element, index) => {
+        //     if (element.coin === 0) {
+        //         console.log(element)
+        //     } else {
+        //         element == null
+        //     }
+        // });
+        // let array = [1, 2, 3, 4, 5]
+        // func = () => {
+        //     array.forEach(element => {
+        //         console.log(element)
+        //     });
+        // }
+        // setInterval(func, 1000)
+    </script>
+
+</body>
+
+</html>

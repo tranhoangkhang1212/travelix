@@ -1,9 +1,29 @@
+const $ = document.querySelector.bind(document)
+const $$ = document.querySelectorAll.bind(document)
+// Scroll Top
+var scrollTop = () => {
+    var header = $('.header');
+    header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+var scrollBtn = $('.scroll-top')
+scrollBtn.addEventListener('click', scrollTop)
+window.addEventListener('scroll', scrollBtnDisplay);
+
+function scrollBtnDisplay(){
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        scrollBtn.style.display = 'block'
+    }else{
+        scrollBtn.style.display = 'none'
+    }
+}
+
 // Active link header
 var listLink = location.href;
-var listItem = document.querySelectorAll(".header__nav__container--list a");
+var listItem = $$(".header__nav__container--list a");
 var listLength = listItem.length;
 
-let i = 0;
+var i = 0;
 for (i; i < listLength; i++) {
     if (listItem[i].href === listLink) {
         listItem[i].className = "active";
@@ -11,18 +31,15 @@ for (i; i < listLength; i++) {
 }
 
 var links = location.href;
-var items = document.querySelectorAll(".header__menu__body--content a");
+var items = $$(".header__menu__body--content a");
 var listslength = items.length;
 
-let j = 0;
+var j = 0;
 for (j; j < listLength; j++) {
     if (items[j].href === links) {
         items[j].className = "active";
     }
 }
-
-const $ = document.querySelector.bind(document)
-const $$ = document.querySelectorAll.bind(document)
 
 // Header sticky
 var headerSticky = $('.header__nav')
@@ -57,7 +74,6 @@ var add = function() {
 links.forEach(link => {
     link.addEventListener('click', add)
 });
-
 // Active Search
 var tabs = $$('.search__container__tab')
 
