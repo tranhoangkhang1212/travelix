@@ -45,11 +45,11 @@ header.innerHTML = `
       </div>
       <div class="l-6 hide-on-tablet_mobile">
         <ul class="header__nav__container--list">
-          <li><a class="active" href="modules/home.html">Home</a></li>
-          <li><a href="modules/about.html">About</a></li>
-          <li><a href="modules/offers.html">Offers</a></li>
-          <li><a href="modules/news.html">News</a></li>
-          <li><a href="modules/contact.html">Contact</a></li>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="offers.html">Offers</a></li>
+          <li><a href="news.html">News</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>              
       <div class="l-3 m-6 c-4">
@@ -69,11 +69,11 @@ header.innerHTML = `
 <div class="header__menu__overlay"></div>
 <div class="header__menu__body--content">
   <ul>
-    <li><a class="active" href="modules/home.html">Home</a></li>
-    <li><a href="modules/about.html">About</a></li>
-    <li><a href="modules/offers.html">Offers</a></li>
-    <li><a href="modules/news.html">News</a></li>
-    <li><a href="modules/contact.html">Contact</a></li>
+    <li><a href="home.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="offers.html">Offers</a></li>
+    <li><a href="news.html">News</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
   <i class="fas fa-times" id="menu_close"></i>
 </div>
