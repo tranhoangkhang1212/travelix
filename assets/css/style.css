@@ -68,6 +68,7 @@
     height: 100%;
     background: var(--bg-btn);
     transition: all 400ms ease;
+    cursor: pointer;
 }
 
 .home__container__slider--btn:hover .btn__bgc,
@@ -231,6 +232,7 @@
     line-height: 53px;
     margin-top: 30px;
     transition: all .3s ease-in-out;
+    cursor: pointer;
 }
 
 .search__container--btn:hover {
