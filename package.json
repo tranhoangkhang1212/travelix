@@ -1,0 +1,7 @@
+{
+  "dependencies": {
+    "chartjs-plugin-annotation": "^1.0.2",
+    "jquery": "^3.6.0",
+    "mathjs": "^9.5.1"
+  }
+}

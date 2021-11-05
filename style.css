@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+.numbers input {
+    margin: 10px 0;
+    width: 77%;
+    border: 2px solid #000;
+    outline: none;
+    height: 25px;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+
+.numbers label {
+    margin-right: 10px;
+}
+
+.btn {
+    text-align:right;
+    margin-right:9%;
+    margin-top: 15px;
+}
+
+button {
+    width: 85px;
+    margin-left: 15px;
+    background: none; 
+    font-size:16px;
+    padding: 2px 0;
+    border: 2px solid #000;       
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 15px;
+    line-height:1.5;
+}
