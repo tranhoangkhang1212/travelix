@@ -3,5 +3,23 @@
     "chartjs-plugin-annotation": "^1.0.2",
     "jquery": "^3.6.0",
     "mathjs": "^9.5.1"
-  }
+  },
+  "name": "travelix",
+  "version": "1.0.0",
+  "main": "main.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tranhoangkhang1212/travelix.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tranhoangkhang1212/travelix/issues"
+  },
+  "homepage": "https://github.com/tranhoangkhang1212/travelix#readme",
+  "description": ""
 }
